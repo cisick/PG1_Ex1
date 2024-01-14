@@ -7,6 +7,7 @@
 # -------------------------------------------------------------------------------------------
 from datetime import datetime
 
+
 def addUserToList(listOfUserObjects):
     userObject = dict() # {}
     # zu 2)
@@ -48,19 +49,18 @@ def setValid(listOfUserObjects):
             if userObject["valid"] == False:
                 userObject["password"] = input("Geben Sie ein neues Password ein: ")
                 userObject["valid"] = True
+
+
 # -------------------------------------------------------------------------------------------
     # Aufgabe 7:
     # Prüfen Sie, mittels der Funktion checkMailAdresses(), ob doppelte E-Mail-Adressen vorliegen.
 # -------------------------------------------------------------------------------------------
 def checkMailAdresses(listOfUserObjects):
-    counter = 1
-
-    for userObject in listOfUserObjects:
-        for i in range(counter, len(listOfUserObjects), 1):
-            if userObject["e-mail"] == listOfUserObjects[i]["e-mail"]:
+    for i, userObject in enumerate(listOfUserObjects):
+        for j in range(i + 1, len(listOfUserObjects)):
+            if userObject["e-mail"] == listOfUserObjects[j]["e-mail"]:
                 print("Diese E-Mail ist doppelt:", userObject["e-mail"])
 
-        counter += 1
 
 # -------------------------------------------------------------------------------------------
     # In dem folgenden Bereich nehmen Sie keine Änderungen vor!
