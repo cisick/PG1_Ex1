@@ -54,7 +54,6 @@ def setValid(listOfUserObjects):
 # -------------------------------------------------------------------------------------------
     # Aufgabe 7:
     # Prüfen Sie, mittels der Funktion checkMailAdresses(), ob doppelte E-Mail-Adressen vorliegen.
-
 # -------------------------------------------------------------------------------------------
 def checkMailAdresses(listOfUserObjects):
     for i, userObject in enumerate(listOfUserObjects):
