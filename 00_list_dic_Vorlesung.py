@@ -94,6 +94,8 @@ def changePassword(listOfUserObjects):
             while userObject["password"] == user["password"]:
                 user["password"] = input("Geben Sie das neue Passwort ein: ")
 
+zahl1 = 1
+
 
 # Main-File
 # In diesem Bereich nichts ändern!
