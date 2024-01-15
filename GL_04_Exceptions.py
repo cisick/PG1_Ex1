@@ -1,4 +1,5 @@
 
+
 # Beispiel einer Try-Except-Blockstruktur
 try:
     # Hier kommt der Code, der möglicherweise eine Ausnahme verursacht
