@@ -14,7 +14,7 @@ except ValueError as ve:
 except ZeroDivisionError:
     # Hier wird Code ausgeführt, wenn eine ZeroDivisionError-Ausnahme auftritt
     print("Division durch Null ist nicht erlaubt!")
-
+    pass
 else:
     # Dieser Block wird ausgeführt, wenn keine Ausnahme aufgetreten ist
     print("Keine Ausnahme aufgetreten!")
